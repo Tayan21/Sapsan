@@ -1,0 +1,20 @@
+form {
+    width: 300px;
+}
+
+input {
+    display: block;
+    float: right;
+}
+
+input[type="submit"] {
+    width: 100px;
+    float: left;
+}
+label {
+    line-height: 25px;
+}
+
+select {
+    float: right;
+}

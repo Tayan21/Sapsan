@@ -1,0 +1,32 @@
+body {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:blueviolet
+  }
+  .name {
+    color:aquamarine
+  }
+  .groups {
+    text-decoration: underline;
+    color:chocolate;
+    margin-top: 50px;
+
+  }
+
+  #experience {
+    text-decoration: none;
+  }
+
+  a {
+    color:aqua;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color:brown;
+  }

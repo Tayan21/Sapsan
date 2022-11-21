@@ -1,5 +1,15 @@
+body {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    color: red;
+  }
+
 form {
-    width: 300px;
+    width: 350px;
 }
 
 input {
@@ -12,9 +22,18 @@ input[type="submit"] {
     float: left;
 }
 label {
-    line-height: 25px;
+    line-height: 35px;
 }
 
 select {
     float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
 }

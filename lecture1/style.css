@@ -2,31 +2,36 @@ body {
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:blueviolet
-  }
-  .name {
+}
+
+.image {
+    width: 90px;
+}
+
+.name {
     color:aquamarine
-  }
-  .groups {
+}
+.groups {
     text-decoration: underline;
     color:chocolate;
     margin-top: 50px;
 
-  }
+}
 
-  #experience {
+#experience {
     text-decoration: none;
-  }
+}
 
-  a {
+a {
     color:aqua;
     text-decoration: none;
-  }
+}
 
-  a:hover {
+a:hover {
     color: black;
     text-decoration: underline;
-  }
+}
 
-  a:visited {
+a:visited {
     color:chartreuse;
-  }
+}

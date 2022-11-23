@@ -1,11 +1,51 @@
+* {
+    box-sizing:border-box;
+    margin: 15px;
+
+}
 body {
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:blueviolet
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    
+}
+
+.menu-item {
+    background-color:black;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    opacity: 0.5;
+}
+
+.section {
+    border-radius: 30px;
+    background-color:darkcyan;
+    opacity: 0.8;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
 .image {
     width: 90px;
+    border-radius: 25px;  
 }
 
 .name {
@@ -13,8 +53,8 @@ body {
 }
 .groups {
     text-decoration: underline;
-    color:chocolate;
-    margin-top: 50px;
+    color:darkmagenta;
+    
 
 }
 

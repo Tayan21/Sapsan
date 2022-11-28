@@ -53,6 +53,11 @@ body {
     opacity: 0.8;
     padding: 30px;
     margin-bottom: 50px;
+    transition: background-color 2s, transition 2s;
+}
+
+.section:hover {
+    background-color:goldenrod;
 }
 
 .image {

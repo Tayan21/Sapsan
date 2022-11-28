@@ -21,7 +21,19 @@ body {
 }
 
 .menu {
+    animation-duration: 2s;
+    animation-name: fromright; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes fromright {
+    from {
+        opacity: 0;
+    }
     
+    to {
+        opacity: 1;
+    }
 }
 
 .menu-item {
@@ -45,7 +57,21 @@ body {
 
 .image {
     width: 90px;
-    border-radius: 25px;  
+    border-radius: 25px; 
+    animation-duration: 2s;
+    animation-name: fadeout; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
 }
 
 .name {

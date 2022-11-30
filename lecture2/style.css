@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -14,6 +14,33 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+h1 {
+    animation-duration: 1s;
+    animation-name: scale; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scale {
+    to {
+        transform: scale(0.8, 0.8);
+    }
+    
+}
+
+.menu {
+    animation-duration: 2s;
+    animation-name: rotation; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
+    
 }
 
 .menu-item {
@@ -42,7 +69,21 @@ form {
     border-radius: 30px;
     padding: 15px;
     padding-bottom: 30px;
+    min-height: 180px;
+    animation-duration: 2s;
+    animation-name: form-scale; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
 }
+
+@keyframes form-scale {
+    to {
+        transform: scale(0.8, 1);
+    }
+    
+}
+
 
 input {
     display: block;
@@ -73,4 +114,30 @@ a:hover {
 
 a:visited {
     color:chartreuse;
+}
+
+.author {
+    font-weight:100;
+    float: right;
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width:1200px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        gap: 30px;
+    }
 }

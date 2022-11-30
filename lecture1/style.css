@@ -54,6 +54,18 @@ body {
     padding: 30px;
     margin-bottom: 50px;
     transition: background-color 2s, transition 2s;
+    animation-duration: 2s;
+    animation-name: section-scale; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes section-scale {
+    to {
+        transform: scale(0.9, 1);
+    }
+    
 }
 
 .section:hover {
@@ -105,4 +117,39 @@ a:hover {
 
 a:visited {
     color:chartreuse;
+}
+
+@media only screen and (max-width:1200px) {
+    .header {
+        margin: 0;
+        width:100%;
+        position: fixed;
+        top: 0;
+        background-color: blueviolet;
+        z-index: 100;
+        justify-content: space-around;
+    }
+    .container{
+        margin-top: 300px;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width:100%;
+        background-color: blueviolet;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .section {
+        text-align: center;
+    }
+
+    ul, ol, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
 }

@@ -1,0 +1,8 @@
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    button {
+        font-size: $fontSize;
+    }
+}

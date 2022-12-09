@@ -1,0 +1,14 @@
+@mixin flexExapmle($content, $font: 10px, $flex-direction) {
+    display: flex;
+    justify-content: $content;
+    font-size: $font;
+    text-align: center;
+    align-items: center;
+    flex-direction: $flex-direction;
+    flex-wrap: wrap;
+}
+
+@function myFunc($a, $b){
+    $result: $a + $b;
+    @return $result;
+}

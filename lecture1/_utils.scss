@@ -1,0 +1,11 @@
+@mixin animation($aName) {
+    animation-duration: 2s;
+    animation-name: $aName; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@function sectionMargin() {
+    $result: 3%;
+    @return $result;
+}

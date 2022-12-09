@@ -1,8 +1,10 @@
+@import './mixins';
+
 header {
+    @include flexExapmle(space-between, 10px, row);
     background-color: aqua;
-    display: flex;
-    justify-content: space-around;
-    button {
-        font-size: $fontSize;
-    }
+    margin-bottom: 100px;
+    
+    
+
 }

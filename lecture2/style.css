@@ -1,143 +1,160 @@
 body {
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #c9a2a2;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c9a2a2;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
-    animation-duration: 1s;
-    animation-name: scale; 
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes scale {
+  to {
+    transform: scale(0.8, 0.8);
+  }
 }
 
 @keyframes scale {
-    to {
-        transform: scale(0.8, 0.8);
-    }
-    
+  to {
+    transform: scale(0.8, 0.8);
+  }
 }
-
 .menu {
-    animation-duration: 2s;
-    animation-name: rotation; 
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
+
+@-webkit-keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes rotation {
-    to {
-        transform: rotate(360deg);
-    }
-    
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 .menu-item {
-    background-color:black;
-    padding: 10px;
-    border-radius: 25px;
-    transition: all 0.3s;
+  background-color: black;
+  padding: 10px;
+  border-radius: 25px;
+  transition: all 0.3s;
 }
-
 .menu-item:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 h1 {
-    color: red;
+  color: red;
 }
 
 form {
-    width: 350px;
-    margin: 0 auto;
+  width: 350px;
+  margin: 0 auto;
 }
 
 .form-items {
-    text-align: center;
-    background-color:blueviolet;
-    border-radius: 30px;
-    padding: 15px;
-    padding-bottom: 30px;
-    min-height: 180px;
-    animation-duration: 2s;
-    animation-name: form-scale; 
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    
+  text-align: center;
+  background-color: blueviolet;
+  border-radius: 30px;
+  padding: 15px;
+  padding-bottom: 30px;
+  min-height: 180px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: form-scale;
+          animation-name: form-scale;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes form-scale {
+  to {
+    transform: scale(0.8, 1);
+  }
 }
 
 @keyframes form-scale {
-    to {
-        transform: scale(0.8, 1);
-    }
-    
+  to {
+    transform: scale(0.8, 1);
+  }
 }
-
-
 input {
-    display: block;
-    float: right;
+  display: block;
+  float: right;
 }
 
-input[type="submit"] {
-    width: 100px;
-    float: left;
+input[type=submit] {
+  width: 100px;
+  float: left;
 }
+
 label {
-    line-height: 35px;
+  line-height: 35px;
 }
 
 select {
-    float: right;
+  float: right;
 }
 
 a {
-    color:aqua;
-    text-decoration: none;
+  color: aqua;
+  text-decoration: none;
 }
-
 a:hover {
-    color: black;
-    text-decoration: underline;
+  color: black;
+  text-decoration: underline;
 }
-
 a:visited {
-    color:chartreuse;
+  color: chartreuse;
 }
 
 .author {
-    font-weight:100;
-    float: right;
-    position: fixed;
-    bottom: 0;
+  font-weight: 100;
+  float: right;
+  position: fixed;
+  bottom: 0;
 }
 
-@media only screen and (max-width:1200px) {
-    .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+@media only screen and (max-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
-
-@media only screen and (max-width:440px) {
-    .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-        gap: 30px;
-    }
-}
+@media only screen and (max-width: 440px) {
+  .header {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -42,5 +42,28 @@ const res = {}
 console.log(isEmpty(sapsanStudent))
 
 const myFamily = {
-   
+   me: {
+      name: 'Tayan',
+      age: 30,
+      zodiacSign: 'cancer',
+      chineseHorocsop: 'monkey',
+   },
+   mother: {
+      name: 'Roza',
+      age: 58,
+      zodiacSign: 'saggitarius',
+      chineseHorocsop: 'dragon',
+   },
+   father: {
+      name: 'Rakhymzhan',
+      age: 58,
+      zodiacSign: 'gemini',
+      chineseHorocsop: 'dragon',
+   },
+   sister: {
+      name: 'Asel',
+      age: 31,
+      zodiacSign: 'libra',
+      chineseHorocsop: 'horse',
+   },
 }

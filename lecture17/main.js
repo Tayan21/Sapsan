@@ -40,3 +40,31 @@ btn3.addEventListener('click', () => {
 });
 
 //HW Task4
+let btn4 = document.getElementById('btn4')
+let alertinput = document.getElementById('alertinput')
+
+btn4.addEventListener('click', () => {
+  let a = Math.pow(alertinput.value, 2)
+  alert(a)
+  alertinput.value = ''
+});
+
+//HW Task5
+let btn5 = document.getElementById('btn5')
+let swapinput1 = document.getElementById('swapinput1')
+let swapinput2 = document.getElementById('swapinput2')
+
+btn5.addEventListener('click', () => {
+  let temp = swapinput1.value
+  swapinput1.value = swapinput2.value
+  swapinput2.value = temp
+});
+
+//HW Task6
+let btn6 = document.getElementById('btn6')
+let colorinput = document.getElementById('colorinput')
+
+
+btn6.addEventListener('click', () => {
+ colorinput.style.color = "red"
+});

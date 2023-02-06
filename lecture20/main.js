@@ -77,4 +77,4 @@ asyncFunc2('https://my-json-server.typicode.com/Tayan21/serverasync/countries/1'
   asyncFunc2('https://my-json-server.typicode.com/Tayan21/newserver/posts/1', {
   method: 'DELETE',
 })
-.then(data => addData())
+.then(data => console.log(data))

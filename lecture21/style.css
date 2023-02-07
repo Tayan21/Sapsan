@@ -5,10 +5,9 @@ body {
     align-items: center;
 }
 
-.drums {
+.drum {
     width: 626px;
     height: 486px;
-    background-image: url("./images/drum.png");
     border: 1px solid #000;
     position: relative;
 }
@@ -17,7 +16,6 @@ body {
     width: 234px;
     height: 234px;
     position: absolute;
-    background: url("./images/kick.png");
     left: 116px;
     bottom: 36px;
 }
@@ -34,7 +32,6 @@ body {
     width: 119px;
     height: 59px;
     position: absolute;
-    background: url("./images/snare.png");
     left: 360px;
     bottom: 204px;
 }
@@ -51,7 +48,7 @@ body {
     width: 122px;
     height: 43px;
     position: absolute;
-    background: url("./images/hi-hat.png");
+
     left: 437px;
     top: 71px;
 }
@@ -68,7 +65,6 @@ body {
     width: 135px;
     height: 93px;
     position: absolute;
-    background: url("./images/tom1.png");
     left: 81px;
     top: 132px;
 }
@@ -85,7 +81,6 @@ body {
     width: 134px;
     height: 115px;
     position: absolute;
-    background: url("./images/tom2.png");
     left: 229px;
     top: 103px;
 }
@@ -102,7 +97,6 @@ body {
     width: 130px;
     height: 41px;
     position: absolute;
-    background: url("./images/crash.png");
     left: 159px;
     top: 42px;
 }

@@ -32,7 +32,7 @@ const asyncFunc = async (url) => {
   return json 
 } 
 
-asyncFunc("https://my-json-server.typicode.com/Tayan21/projectserver/drums")
+asyncFunc("https://my-json-server.typicode.com/Tayan21/projectserv/drums")
     .then(data => {
       for(let i = 0; i < data.length; i++) {
         if(data[i]['name'] == "drum") {

@@ -32,7 +32,6 @@ const asyncFunc = async (url) => {
   return json 
 } 
 
-
 asyncFunc("https://my-json-server.typicode.com/Tayan21/projectserver/drums")
     .then(data => {
       for(let i = 0; i < data.length; i++) {
@@ -43,21 +42,25 @@ asyncFunc("https://my-json-server.typicode.com/Tayan21/projectserver/drums")
           document.body.appendChild(drums)
           for(let i = 0; i < data.length-1; i++) {
             let div = document.createElement('div')
+            let key = document.createElement('div')
+
+            key.innerHTML = `${data[i]['data-key'].toUpperCase()}`
+            div.append(key)
+
             div.setAttribute('data-key', data[i]['data-key'])
-            div.setAttribute('class', data[i].name) 
+            div.setAttribute('class', data[i].name)
+            div.style.background = `url(${data[i]['image']})` 
             drums.append(div)
           }
         }
       }
       
-
       for(let i = 0; i < data.length-1; i++) {
         let audio = document.createElement('audio')
         audio.setAttribute('data-a', data[i]['data-a'])
         audio.setAttribute('src', data[i]['folder']) 
         document.body.appendChild(audio)
       }
-
     })
     .catch(e => console.log(e.message))
 

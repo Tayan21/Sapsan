@@ -1,0 +1,156 @@
+
+@function sectionMargin() {
+  $result: 3%;
+  @return $result;
+}
+
+$bgColor: blueviolet;
+$bgMenuColor: black;
+$bgSectionColor: darkcyan;
+
+body {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: $bgColor;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ /* grid-template-rows: repeat(4, 1fr) 100px;*/
+  grid-auto-rows: minmax(0, auto);
+  align-items: start;
+  grid-gap: 10px;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+.menu-item {
+  background-color:$bgMenuColor;
+  padding: 10px;
+  border-radius: 25px;
+  transition: all 0.3s;
+
+  &:hover {
+      opacity: 0.5;
+  }
+}
+
+.section {
+  border-radius: 30px;
+  background-color:$bgSectionColor;
+  opacity: 0.8;
+  padding: 30px;
+  margin-bottom: sectionMargin();
+  transition: background-color 2s, transition 2s;
+
+  &:hover {
+      background-color:goldenrod;
+  }
+}
+
+
+
+.image {
+  width: 90px;
+  border-radius: 25px; 
+
+}
+
+
+
+.name {
+  color:aquamarine
+}
+
+.groups {
+  text-decoration: underline;
+  color:darkmagenta;
+}
+
+#experience {
+  text-decoration: none;
+}
+
+a {
+  color:aqua;
+  text-decoration: none;
+  
+  &:hover {
+      color: $bgMenuColor;
+      text-decoration: underline;
+  }
+
+  &:visited {
+      color:chartreuse;
+  }
+}
+
+
+.item-1, .item-2, .item-7 {
+  grid-column: 1/3;
+}
+
+@media only screen and (max-width:1200px) {
+  .header {
+      margin: 0;
+      width:100%;
+      position: fixed;
+      top: 0;
+      background-color: blueviolet;
+      z-index: 100;
+      justify-content: space-around;
+  }
+  .container{
+      margin-top: 200px;
+  }
+
+  .footer {
+      position: fixed;
+      bottom: 0;
+      width:100%;
+      background-color: blueviolet;
+      margin: 0;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .section {
+      text-align: center;
+  }
+
+  .item-3, .item-5 {
+      grid-column: 1/3;
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  .item-6 {
+      grid-row: 3;
+      grid-column: 2;
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  table {
+     align-content: center;
+  }
+
+  ul, ol, li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+  }
+}

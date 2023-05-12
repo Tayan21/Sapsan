@@ -1,50 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
-import Block from './Block';
-import Button from './Button';
-import LangButton from './LangButton';
 
-export type IContext = {
-    theme: string;
-    lang: string;
-    text: string;
-    handleClick: () => void
-    switchLang: () => void 
-}
-export const MyContext = React.createContext<IContext | null>(null)
+
+
 
 function App() {
-  const [theme, setTheme] = React.useState("dark")
-  const [lang, setLang] = React.useState('ru')
-  const [text, setText] = React.useState("Привет")
-  const handleClick = () => {
-    if(theme === "dark") {
-      setTheme("light")
-    } 
-    if (theme === "light") {
-      setTheme("dark")
-    } 
-  }
-
-  const switchLang = () => {
-    if(lang === "ru") {
-      setLang("kz")
-      setText("Сәлем")
-    } else {
-      setTheme("ru")
-      setText("Привет")
-    } 
-  }
 
   return (
     <div className="App">
       <header className="App-header">
-        <MyContext.Provider value={{theme, handleClick, switchLang, lang, text}}>
-          <Block>
-            <Button />
-            <LangButton />
-          </Block>
-        </MyContext.Provider>
+        <img src="./img/burger.png"/>
+        <img src="./img/combo.png"/>
+        <img src="./img/dessert.png"/>
+        <img src="./img/hot-dog.png"/>
+        <img src="./img/pizza.png"/>
+        <h1>Hello</h1>
+        <Link to="/about">About</Link>
       </header>
     </div>
   );

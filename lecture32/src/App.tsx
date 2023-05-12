@@ -7,12 +7,12 @@ export default function App() {
   const TIMER = 10 * 1000;
   const NOW_IN_MS = new Date().getTime();
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + TIMER;
+  const dateTime = NOW_IN_MS + TIMER;
 
   return (
     <div>
       <h1>Countdown Timer</h1>
-      <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+      <CountdownTimer targetDate={dateTime} />
     </div>
   );
 }
